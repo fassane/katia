@@ -1,0 +1,114 @@
+StartFontMetrics 2.0
+FontName Louvaine
+FullName Louvaine
+FamilyName Louvaine
+FontBBox -266 -231 1224 1141
+Version 001.001
+Weight normal
+Notice Louvaine (C) Copyright PJL MMII
+ItalicAngle  0.00
+IsFixedPitch false
+UnderlinePosition -100
+UnderlineThickness 50
+EncodingScheme AdobeStandardEncoding
+CapHeight 1037
+Ascender 923
+Descender -154
+XHeight 646
+StartCharMetrics 94
+C -1 ; WX 215 ; N space ; B 0 0 0 0 ;
+C 33 ; WX 121 ; N exclam ; B 11 189 144 927 ;
+C 34 ; WX 221 ; N quotedbl ; B 12 777 210 952 ;
+C 36 ; WX 217 ; N dollar ; B 5 247 205 820 ;
+C 37 ; WX 214 ; N percent ; B 23 168 198 643 ;
+C 38 ; WX 504 ; N ampersand ; B 16 172 442 931 ;
+C 169 ; WX 114 ; N quotesingle ; B 12 787 104 952 ;
+C 40 ; WX 199 ; N parenleft ; B 26 181 187 938 ;
+C 41 ; WX 198 ; N parenright ; B 26 182 189 942 ;
+C 44 ; WX 77 ; N comma ; B -2 139 68 257 ;
+C 45 ; WX 233 ; N hyphen ; B 27 453 214 503 ;
+C 46 ; WX 74 ; N period ; B 7 189 66 256 ;
+C 47 ; WX 301 ; N slash ; B 12 182 319 875 ;
+C 48 ; WX 377 ; N zero ; B 21 180 361 929 ;
+C 49 ; WX 149 ; N one ; B 11 184 128 931 ;
+C 50 ; WX 315 ; N two ; B 13 182 300 934 ;
+C 51 ; WX 287 ; N three ; B 16 184 267 931 ;
+C 52 ; WX 344 ; N four ; B 16 166 333 931 ;
+C 53 ; WX 289 ; N five ; B 16 189 276 938 ;
+C 54 ; WX 281 ; N six ; B 19 180 265 933 ;
+C 55 ; WX 279 ; N seven ; B 23 188 271 925 ;
+C 56 ; WX 286 ; N eight ; B 17 184 269 931 ;
+C 57 ; WX 327 ; N nine ; B 12 183 311 933 ;
+C 58 ; WX 77 ; N colon ; B 8 267 70 539 ;
+C 59 ; WX 77 ; N semicolon ; B -5 211 69 538 ;
+C 63 ; WX 370 ; N question ; B 2 189 365 932 ;
+C 65 ; WX 787 ; N A ; B 15 22 784 1141 ;
+C 66 ; WX 752 ; N B ; B 1 19 739 1039 ;
+C 67 ; WX 563 ; N C ; B 6 17 549 975 ;
+C 68 ; WX 842 ; N D ; B 0 18 830 1035 ;
+C 69 ; WX 770 ; N E ; B -1 19 838 1016 ;
+C 70 ; WX 646 ; N F ; B -3 21 786 1016 ;
+C 71 ; WX 619 ; N G ; B 5 -231 611 969 ;
+C 72 ; WX 783 ; N H ; B -2 20 920 1037 ;
+C 73 ; WX 302 ; N I ; B -64 16 330 969 ;
+C 74 ; WX 432 ; N J ; B -163 -59 453 968 ;
+C 75 ; WX 733 ; N K ; B 4 17 908 1022 ;
+C 76 ; WX 721 ; N L ; B 2 13 922 1009 ;
+C 77 ; WX 805 ; N M ; B -15 21 825 987 ;
+C 78 ; WX 698 ; N N ; B 0 14 876 1038 ;
+C 79 ; WX 612 ; N O ; B 5 13 592 974 ;
+C 80 ; WX 723 ; N P ; B 0 18 716 1020 ;
+C 81 ; WX 550 ; N Q ; B 5 -64 695 972 ;
+C 82 ; WX 727 ; N R ; B 0 9 866 1037 ;
+C 83 ; WX 534 ; N S ; B 0 11 529 979 ;
+C 84 ; WX 581 ; N T ; B 1 18 749 1018 ;
+C 85 ; WX 771 ; N U ; B 1 18 935 1016 ;
+C 86 ; WX 814 ; N V ; B 1 17 1008 1037 ;
+C 87 ; WX 1002 ; N W ; B 3 15 1224 1029 ;
+C 88 ; WX 886 ; N X ; B -2 -121 1044 975 ;
+C 89 ; WX 665 ; N Y ; B 2 -137 856 1009 ;
+C 90 ; WX 665 ; N Z ; B -1 -190 889 960 ;
+C 91 ; WX 199 ; N bracketleft ; B 26 181 187 938 ;
+C 92 ; WX 261 ; N backslash ; B 6 182 281 875 ;
+C 93 ; WX 198 ; N bracketright ; B 26 182 189 942 ;
+C 95 ; WX 233 ; N underscore ; B -19 -33 251 -11 ;
+C 193 ; WX 112 ; N grave ; B 5 787 104 952 ;
+C 97 ; WX 227 ; N a ; B 5 185 242 622 ;
+C 98 ; WX 193 ; N b ; B 4 173 229 930 ;
+C 99 ; WX 165 ; N c ; B 4 186 172 623 ;
+C 100 ; WX 240 ; N d ; B 3 176 343 923 ;
+C 101 ; WX 155 ; N e ; B 2 185 162 620 ;
+C 102 ; WX 221 ; N f ; B -98 -205 304 914 ;
+C 103 ; WX 188 ; N g ; B -20 -132 184 612 ;
+C 104 ; WX 219 ; N h ; B 4 178 228 931 ;
+C 105 ; WX 139 ; N i ; B -9 186 146 776 ;
+C 106 ; WX 111 ; N j ; B -184 -122 120 803 ;
+C 107 ; WX 249 ; N k ; B 7 186 255 926 ;
+C 108 ; WX 118 ; N l ; B 0 182 229 925 ;
+C 109 ; WX 364 ; N m ; B -10 176 372 621 ;
+C 110 ; WX 248 ; N n ; B -10 184 254 620 ;
+C 111 ; WX 194 ; N o ; B 4 186 185 620 ;
+C 112 ; WX 214 ; N p ; B -212 -154 207 612 ;
+C 113 ; WX 205 ; N q ; B 13 -86 267 618 ;
+C 114 ; WX 167 ; N r ; B -8 180 235 690 ;
+C 115 ; WX 149 ; N s ; B 4 186 146 620 ;
+C 116 ; WX 168 ; N t ; B -12 178 184 773 ;
+C 117 ; WX 240 ; N u ; B -6 182 254 619 ;
+C 118 ; WX 252 ; N v ; B -7 175 267 620 ;
+C 119 ; WX 342 ; N w ; B -14 185 355 623 ;
+C 120 ; WX 248 ; N x ; B -52 79 247 646 ;
+C 121 ; WX 230 ; N y ; B -266 -197 222 623 ;
+C 122 ; WX 193 ; N z ; B -2 184 193 619 ;
+C 123 ; WX 199 ; N braceleft ; B 26 181 187 938 ;
+C 124 ; WX 118 ; N bar ; B 0 182 132 875 ;
+C 125 ; WX 198 ; N braceright ; B 26 182 189 942 ;
+C 96 ; WX 130 ; N quoteleft ; B 10 794 111 959 ;
+C 39 ; WX 114 ; N quoteright ; B 12 787 104 952 ;
+C 170 ; WX 212 ; N quotedblleft ; B 10 788 205 959 ;
+C 186 ; WX 221 ; N quotedblright ; B 12 777 210 952 ;
+C 162 ; WX 183 ; N cent ; B 6 168 181 643 ;
+C 163 ; WX 472 ; N sterling ; B 9 180 455 925 ;
+C 168 ; WX 364 ; N currency ; B 15 180 346 929 ;
+C 182 ; WX 602 ; N paragraph ; B 6 23 581 1098 ;
+EndCharMetrics
+EndFontMetrics

@@ -57,6 +57,8 @@ const RegisterScreen = ({navigation}) => {
           />
         <AppDatePicker  
           inputTitle="Votre date d'anniversaire?"
+          leftIconName='calendar'
+          leftIconColor='#eb5a6d'
         />
         <Input 
           isInputTitlePresent={true}

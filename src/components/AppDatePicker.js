@@ -5,10 +5,12 @@ import {
     StyleSheet,
     TouchableOpacity,
     Dimensions } from 'react-native'
+import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import DatePicker from 'react-native-date-picker'
 
 
-const AppDatePicker = ({inputTitle }) => {
+
+const AppDatePicker = ({inputTitle, leftIconName, leftIconColor }) => {
 
   const [date, setDate] = useState(new Date())
   const [open, setOpen] = useState(false)
@@ -17,10 +19,17 @@ const AppDatePicker = ({inputTitle }) => {
     <>
       <View style={styles.inputTitleContainer}>
         <Text style={styles.inputTitle}> {inputTitle} </Text>
-    </View>
-      <TouchableOpacity onPress={() => setOpen(true)}>
-        <Text> Ici </Text>
-      </TouchableOpacity>
+    </View>    
+    <TouchableOpacity style={styles.container} onPress={() => setOpen(true)} >
+        <FontAwesome 
+            name={leftIconName}
+            color={leftIconColor}
+            size={24}
+            style={styles.leftIcon}
+        />
+        <Text>&nbsp;jj/mm/aaaa&nbsp;</Text>
+    </TouchableOpacity>
+      
       <DatePicker
         modal
         title='Choisissez la date'
@@ -61,4 +70,20 @@ inputTitle: {
     fontFamily: 'FlamanteRomaMedium',
     
 },
+container: {
+  padding: 5,
+  borderWidth: 2,
+  borderRadius: 30,
+  borderColor: '#eb5a6d',
+  width: width * 0.9,
+  height: 48,
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexDirection: 'row'
+},    
+leftIcon: {
+  position: 'absolute',
+  left: 10
+},
+
 })

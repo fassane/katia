@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
         marginTop: 10
     },
     inputTitle: {
-        fontSize: 18,
-        fontFamily: 'FlamanteRomaMedium',  
+        fontSize: 16,
+        fontFamily: 'Gotham Rounded Bold',  
     },
     item: {
         borderWidth: 2,

@@ -7,6 +7,8 @@ import {
     Dimensions } from 'react-native'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import DatePicker from 'react-native-date-picker'
+import { Months } from '../utilities/MatchCorrectDate'
+import { Days } from '../utilities/MatchCorrectDate'
 
 
 
@@ -16,8 +18,12 @@ const AppDatePicker = ({inputTitle, leftIconName, leftIconColor }) => {
   const [open, setOpen] = useState(false)
   //console.log(date)
   const year = date.getFullYear()
+  const month = date.getMonth()
+  const day = date.getDay()
   console.log('annee: ', year)
-  
+
+  console.log(Months[day])
+
 
   return (
     <>
@@ -31,7 +37,8 @@ const AppDatePicker = ({inputTitle, leftIconName, leftIconColor }) => {
             size={24}
             style={styles.leftIcon}
         />
-        <Text>&nbsp;jj/mm/aaaa&nbsp;</Text>
+        <Text style={styles.dateText}>&nbsp;{Days[day]}, {day} {Months[month]} {year}&nbsp;</Text>
+
     </TouchableOpacity>
       
       <DatePicker
@@ -45,9 +52,11 @@ const AppDatePicker = ({inputTitle, leftIconName, leftIconColor }) => {
         onConfirm={(date) => {
           setOpen(false)
           setDate(date)
+
         }}
         onCancel={() => {
           setOpen(false)
+          
         }}
       />
     </>
@@ -70,8 +79,8 @@ const styles = StyleSheet.create({
     marginTop: 10
 },
 inputTitle: {
-    fontSize: 18,
-    fontFamily: 'FlamanteRomaMedium',
+    fontSize: 16,
+    fontFamily: 'Gotham Rounded Bold',
     
 },
 container: {
@@ -89,5 +98,8 @@ leftIcon: {
   position: 'absolute',
   left: 10
 },
+dateText: {
+  fontFamily: 'Gotham Rounded Medium',
+}
 
 })

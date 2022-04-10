@@ -75,11 +75,11 @@ const styles = StyleSheet.create({
     textBienvenu: {
         color: '#000',
         fontSize: 24,
-        fontFamily: 'FlamanteRomaMedium',
+        fontFamily: 'Gotham Rounded Bold',
         marginBottom: 7
     },
     regle: {
-        fontFamily: 'FlamanteRomaMedium',
+        fontFamily: 'Gotham Rounded Bold',
         width: width * 0.7,
         marginLeft: 15
     },
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
       textDeValidation: {
         color: '#ffffff',
         fontSize: 25,
-        fontFamily: 'FlamanteRomaMedium',
+        fontFamily: 'Gotham Rounded Bold',
       }
     
 })

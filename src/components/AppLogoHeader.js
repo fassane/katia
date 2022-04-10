@@ -44,18 +44,19 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     logoImage: {
-        width: 48,
-        height: 48,
-        marginBottom: 4
+        width: 42,
+        height: 42,
+        marginTop: 2
+        
     },
     logoTextWhite: {
         color: '#ffffff',
         fontSize: 50,
-        fontFamily: 'FlamanteRomaMedium'
+        fontFamily: 'Gotham Rounded Bold',
     },
     logoTextRose: {
         color: '#eb5a6d',
         fontSize: 50,
-        fontFamily: 'FlamanteRomaMedium'
+        fontFamily: 'Gotham Rounded Bold',
     },
 })

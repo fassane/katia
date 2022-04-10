@@ -31,6 +31,11 @@
 		E2F5CBA3A4C54DC08166E6A5 /* FlamanteRomaMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2022B42A5824B9496A75ED5 /* FlamanteRomaMedium.ttf */; };
 		5FAC8136683E4BE184885277 /* FlamanteRomaMediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8D207F6EEF94BCF943DBCEE /* FlamanteRomaMediumItalic.ttf */; };
 		174C367741DB46C593AD077C /* LOUVAINE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D2E2BA23AED64E33889A4C34 /* LOUVAINE.TTF */; };
+		B0E7AE8219F345C78F0E6A21 /* Gotham Rounded Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D45AAD85C9894A4CABFA1220 /* Gotham Rounded Bold.otf */; };
+		BBEDC66280624E11ADDE0CB2 /* Gotham Rounded Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC582294D34D41F4B0B65FD5 /* Gotham Rounded Light Italic.otf */; };
+		1C16D8733EB94340A72C2648 /* Gotham Rounded Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0D1A1D7B495584120A3D /* Gotham Rounded Light.otf */; };
+		5F6C6C5F956A400EB76412B1 /* Gotham Rounded Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C31965E039B54A88984DBCFD /* Gotham Rounded Medium Italic.otf */; };
+		491D2A3DE5494188AE9A9C95 /* Gotham Rounded Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5ADA67F6AD3425F8CD8549A /* Gotham Rounded Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,11 @@
 		F2022B42A5824B9496A75ED5 /* FlamanteRomaMedium.ttf */ = {isa = PBXFileReference; name = "FlamanteRomaMedium.ttf"; path = "../assets/fonts/FlamanteRomaMedium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		B8D207F6EEF94BCF943DBCEE /* FlamanteRomaMediumItalic.ttf */ = {isa = PBXFileReference; name = "FlamanteRomaMediumItalic.ttf"; path = "../assets/fonts/FlamanteRomaMediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		D2E2BA23AED64E33889A4C34 /* LOUVAINE.TTF */ = {isa = PBXFileReference; name = "LOUVAINE.TTF"; path = "../assets/fonts/LOUVAINE.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D45AAD85C9894A4CABFA1220 /* Gotham Rounded Bold.otf */ = {isa = PBXFileReference; name = "Gotham Rounded Bold.otf"; path = "../assets/fonts/Gotham Rounded Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC582294D34D41F4B0B65FD5 /* Gotham Rounded Light Italic.otf */ = {isa = PBXFileReference; name = "Gotham Rounded Light Italic.otf"; path = "../assets/fonts/Gotham Rounded Light Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3BEC0D1A1D7B495584120A3D /* Gotham Rounded Light.otf */ = {isa = PBXFileReference; name = "Gotham Rounded Light.otf"; path = "../assets/fonts/Gotham Rounded Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C31965E039B54A88984DBCFD /* Gotham Rounded Medium Italic.otf */ = {isa = PBXFileReference; name = "Gotham Rounded Medium Italic.otf"; path = "../assets/fonts/Gotham Rounded Medium Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A5ADA67F6AD3425F8CD8549A /* Gotham Rounded Medium.otf */ = {isa = PBXFileReference; name = "Gotham Rounded Medium.otf"; path = "../assets/fonts/Gotham Rounded Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +195,11 @@
 				F2022B42A5824B9496A75ED5 /* FlamanteRomaMedium.ttf */,
 				B8D207F6EEF94BCF943DBCEE /* FlamanteRomaMediumItalic.ttf */,
 				D2E2BA23AED64E33889A4C34 /* LOUVAINE.TTF */,
+				D45AAD85C9894A4CABFA1220 /* Gotham Rounded Bold.otf */,
+				AC582294D34D41F4B0B65FD5 /* Gotham Rounded Light Italic.otf */,
+				3BEC0D1A1D7B495584120A3D /* Gotham Rounded Light.otf */,
+				C31965E039B54A88984DBCFD /* Gotham Rounded Medium Italic.otf */,
+				A5ADA67F6AD3425F8CD8549A /* Gotham Rounded Medium.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -299,6 +314,11 @@
 				E2F5CBA3A4C54DC08166E6A5 /* FlamanteRomaMedium.ttf in Resources */,
 				5FAC8136683E4BE184885277 /* FlamanteRomaMediumItalic.ttf in Resources */,
 				174C367741DB46C593AD077C /* LOUVAINE.TTF in Resources */,
+				B0E7AE8219F345C78F0E6A21 /* Gotham Rounded Bold.otf in Resources */,
+				BBEDC66280624E11ADDE0CB2 /* Gotham Rounded Light Italic.otf in Resources */,
+				1C16D8733EB94340A72C2648 /* Gotham Rounded Light.otf in Resources */,
+				5F6C6C5F956A400EB76412B1 /* Gotham Rounded Medium Italic.otf in Resources */,
+				491D2A3DE5494188AE9A9C95 /* Gotham Rounded Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

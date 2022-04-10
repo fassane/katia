@@ -56,14 +56,15 @@ const stylesregles = StyleSheet.create({
     title: {
         width: width * 0.7,
         color: '#000',
-        fontSize: 20,
-        fontFamily: 'FlamanteRomaMedium'
+        fontSize: 19,
+        fontFamily: 'Gotham Rounded Bold',
     },
     text: {
-        fontFamily: 'FlamanteRomaMedium'
+        fontFamily: 'Gotham Rounded Medium',
     },
     textClique: {
         color: '#eb5a6d',
-        textDecorationLine: 'underline'
+        textDecorationLine: 'underline',
+        fontFamily: 'Gotham Rounded Bold',
     }
 })

@@ -118,10 +118,10 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   textRavieDeVoir: {
-    fontSize: 30,
+    fontSize: 28,
     color: '#000',
     position: 'relative',
-    fontFamily: 'FlamanteRomaMedium',
+    fontFamily: 'Gotham Rounded Bold',
     marginBottom: 20
   },
   buttonValidation: {
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
   textDeValidation: {
     color: '#ffffff',
     fontSize: 25,
-    fontFamily: 'FlamanteRomaMedium'
+    fontFamily: 'Gotham Rounded Bold',
   },
   phraseDeRedirection: {
     position: 'relative',
@@ -151,12 +151,12 @@ const styles = StyleSheet.create({
     position: 'relative',
     justifyContent: 'center',
     alignItems: 'center',
-    top: height * 0.005,
+    top: height * 0.003,
   },
   textphraseDeRedirection: {
       color: '#606060',
       textDecorationLine: 'underline',
-      fontFamily: 'FlamanteRomaMedium'
+      fontFamily: 'Gotham Rounded Bold',
   }
   
 })

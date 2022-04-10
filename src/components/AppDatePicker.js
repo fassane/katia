@@ -37,7 +37,7 @@ const AppDatePicker = ({inputTitle, leftIconName, leftIconColor }) => {
             size={24}
             style={styles.leftIcon}
         />
-        <Text style={styles.dateText}>&nbsp;{Days[day]}, {day} {Months[month]} {year}&nbsp;</Text>
+        <Text style={styles.dateText}>&nbsp;{Days[day]}, {day} {Months[month]} de l'an {year}&nbsp;</Text>
 
     </TouchableOpacity>
       

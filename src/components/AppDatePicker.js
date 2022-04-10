@@ -14,6 +14,10 @@ const AppDatePicker = ({inputTitle, leftIconName, leftIconColor }) => {
 
   const [date, setDate] = useState(new Date())
   const [open, setOpen] = useState(false)
+  //console.log(date)
+  const year = date.getFullYear()
+  console.log('annee: ', year)
+  
 
   return (
     <>

@@ -72,6 +72,11 @@
 		<string>FlamanteRomaMedium.ttf</string>
 		<string>FlamanteRomaMediumItalic.ttf</string>
 		<string>LOUVAINE.TTF</string>
+		<string>Gotham Rounded Bold.otf</string>
+		<string>Gotham Rounded Light Italic.otf</string>
+		<string>Gotham Rounded Light.otf</string>
+		<string>Gotham Rounded Medium Italic.otf</string>
+		<string>Gotham Rounded Medium.otf</string>
 	</array>
 </dict>
 </plist>

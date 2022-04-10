@@ -194,8 +194,8 @@ const styles = StyleSheet.create({
   },
   textDeValidation: {
     color: '#ffffff',
-    fontSize: 25,
-    fontFamily: 'FlamanteRomaMedium'
+    fontSize: 24,
+    fontFamily: 'Gotham Rounded Bold'
   },
   phraseDeRedirection: {
     position: 'relative',
@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
   textphraseDeRedirection: {
     color: '#606060',
     textDecorationLine: 'underline',
-    fontFamily: 'FlamanteRomaMedium'
+    fontFamily: 'Gotham Rounded Bold'
   }
   
 })

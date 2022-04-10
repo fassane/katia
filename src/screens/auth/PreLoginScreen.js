@@ -90,19 +90,19 @@ const styles = StyleSheet.create({
     },
     textCondition: {
         color: '#ffffff',
-        fontSize: 13,
-        fontFamily: 'FlamanteRomaMedium'
+        fontSize: 12,
+        fontFamily: 'Gotham Rounded Medium'
     },
     textConditionGenerale : {
-        fontWeight: 'bold',
+        fontFamily: 'Gotham Rounded Bold',
         textDecorationLine: 'underline'
     },
     textPolitiqueConfidentialite: {
-        fontWeight: 'bold',
+        fontFamily: 'Gotham Rounded Bold',
         textDecorationLine: 'underline'
     },
     textPolitiqueCookies: {
-        fontWeight: 'bold',
+        fontFamily: 'Gotham Rounded Bold',
         textDecorationLine: 'underline'      
     },
     modeDeConnexion: {
@@ -126,7 +126,8 @@ const styles = StyleSheet.create({
         height: 25,
     },
     textConnexionMethode: {
-        fontFamily: 'FlamanteRomaMedium'
+        fontSize: 13,
+        fontFamily: 'Gotham Rounded Bold',
     },
     problemeDeConnexion: {
         justifyContent: 'center',
@@ -136,6 +137,6 @@ const styles = StyleSheet.create({
     textProblemeDeConnexion: {
         color: '#ffffff',
         textDecorationLine: 'underline',
-        fontFamily: 'FlamanteRomaMedium'
+        fontFamily: 'Gotham Rounded Bold'
     }
 })

@@ -76,8 +76,8 @@ const styles = StyleSheet.create({
         marginTop: 5
     },
     inputTitle: {
-        fontSize: 18,
-        fontFamily: 'FlamanteRomaMedium',
+        fontSize: 16,
+        fontFamily: 'Gotham Rounded Bold',
          
     },
     container: {
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
         padding: 10,
         width: width * 0.7,
         height: 40,
-        fontFamily: 'FlamanteRomaMedium'
+        fontFamily: 'Gotham Rounded Medium'
     },
     leftIcon: {
         position: 'absolute',

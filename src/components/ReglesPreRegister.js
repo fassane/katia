@@ -60,7 +60,8 @@ const stylesregles = StyleSheet.create({
         fontFamily: 'Gotham Rounded Bold',
     },
     text: {
-        fontFamily: 'Gotham Rounded Medium',
+        fontSize: 13.5,
+        fontFamily: 'Gotham Rounded Bold',
     },
     textClique: {
         color: '#eb5a6d',

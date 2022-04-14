@@ -12,6 +12,7 @@ import Feather from 'react-native-vector-icons/Feather'
 
 const Input = ({isInputTitlePresent,
                 inputTitle, 
+                iconSize,
                 leftIconName, 
                 leftIconColor, 
                 rightIconName, 
@@ -38,7 +39,7 @@ const Input = ({isInputTitlePresent,
         <FontAwesome 
             name={leftIconName}
             color={leftIconColor}
-            size={28}
+            size={iconSize}
             style={styles.leftIcon}
         />
         <TextInput

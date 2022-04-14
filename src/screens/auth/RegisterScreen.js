@@ -12,6 +12,9 @@ import Input from '../../components/Input'
 import ImagesContainer from '../../components/ImagesContainer'
 import PassionsChoose from '../../components/PassionsChoose'
 import AppDatePicker from '../../components/AppDatePicker'
+import AppChooseGenre from '../../components/AppChooseGenre'
+import AppChooseOrientationSex from '../../components/AppChooseOrientationSex'
+import AppChooseWhoIWantToSee from '../../components/AppChooseWhoIWantToSee'
 
 
 
@@ -48,6 +51,7 @@ const RegisterScreen = ({navigation}) => {
         <Input 
           isInputTitlePresent={true}
           inputTitle='Quel est votre prenom?'
+          iconSize={25}
           leftIconName='user' 
           leftIconColor='#eb5a6d'
           rightIconName='check-circle'
@@ -57,42 +61,25 @@ const RegisterScreen = ({navigation}) => {
           />
         <AppDatePicker  
           inputTitle="Votre date d'anniversaire?"
+          iconSize={22}
           leftIconName='calendar'
           leftIconColor='#eb5a6d'
         />
         <Input 
           isInputTitlePresent={true}
           inputTitle="Votre adresse e-mail?"
+          iconSize={21}
           leftIconName='envelope'
           leftIconColor='#eb5a6d' 
-          rightIconName='eye-off'
-          rightIconColor='#606060'
-          placeholder='Entrer votre mot de passe'
+          rightIconName='check-circle'
+          rightIconColor='green'
+          placeholder='Entrer votre adresse email'
           keyboardType='numeric'
         />
         <Input 
           isInputTitlePresent={true}
           inputTitle="Choisir un mot de passe"
-          leftIconName='envelope'
-          leftIconColor='#eb5a6d' 
-          rightIconName='eye-off'
-          rightIconColor='#606060'
-          placeholder='Entrer votre mot de passe'
-          keyboardType='numeric'
-        />
-        <Input 
-          isInputTitlePresent={true}
-          inputTitle='Vous êtes?'
-          leftIconName='user' 
-          leftIconColor='#eb5a6d'
-          rightIconName='check-circle'
-          rightIconColor='green'
-          placeholder='Entrer votre email'
-          keyboardType='email-address'
-          />
-        <Input 
-          isInputTitlePresent={true}
-          inputTitle='Votre orirentation sexuelle?'
+          iconSize={28}
           leftIconName='lock'
           leftIconColor='#eb5a6d' 
           rightIconName='eye-off'
@@ -100,20 +87,20 @@ const RegisterScreen = ({navigation}) => {
           placeholder='Entrer votre mot de passe'
           keyboardType='numeric'
         />
-        <Input 
-          isInputTitlePresent={true}
+        <AppChooseGenre
+          inputTitle='Vous êtes?'
+        />
+        <AppChooseOrientationSex  
+          inputTitle='Votre orirentation sexuelle?'
+        />
+        <AppChooseWhoIWantToSee  
           inputTitle='Vous voulez voir?'
-          leftIconName='user' 
-          leftIconColor='#eb5a6d'
-          rightIconName='check-circle'
-          rightIconColor='green'
-          placeholder='Entrer votre email'
-          keyboardType='email-address'
         />
         <Input 
           isInputTitlePresent={true}
           inputTitle='Où avez-vous frequentez?'
-          leftIconName='lock'
+          iconSize={24}
+          leftIconName='bus'
           leftIconColor='#eb5a6d' 
           rightIconName='eye-off'
           rightIconColor='#606060'
@@ -123,20 +110,18 @@ const RegisterScreen = ({navigation}) => {
         <Input 
           isInputTitlePresent={true}
           inputTitle='Vous habitez quelle ville?'
-          leftIconName='user' 
+          iconSize={24}
+          leftIconName='building' 
           leftIconColor='#eb5a6d'
-          rightIconName='check-circle'
-          rightIconColor='green'
           placeholder='Entrer votre email'
           keyboardType='email-address'
           />
         <Input 
           isInputTitlePresent={true}
           inputTitle='Quel est votre pays?'
-          leftIconName='user' 
+          iconSize={24}
+          leftIconName='building' 
           leftIconColor='#eb5a6d'
-          rightIconName='check-circle'
-          rightIconColor='green'
           placeholder='Entrer votre email'
           keyboardType='email-address'
           />

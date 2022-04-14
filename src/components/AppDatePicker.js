@@ -12,7 +12,7 @@ import { Days } from '../utilities/MatchCorrectDate'
 
 
 
-const AppDatePicker = ({inputTitle, leftIconName, leftIconColor }) => {
+const AppDatePicker = ({inputTitle, iconSize, leftIconName, leftIconColor }) => {
 
   const [date, setDate] = useState(new Date())
   const [open, setOpen] = useState(false)
@@ -34,7 +34,7 @@ const AppDatePicker = ({inputTitle, leftIconName, leftIconColor }) => {
         <FontAwesome 
             name={leftIconName}
             color={leftIconColor}
-            size={24}
+            size={iconSize}
             style={styles.leftIcon}
         />
         <Text style={styles.dateText}>&nbsp;{Days[day]}, {day} {Months[month]} {year}&nbsp;</Text>
@@ -77,29 +77,29 @@ const styles = StyleSheet.create({
     position: 'relative',
     left: 0,
     marginTop: 10
-},
-inputTitle: {
-    fontSize: 16,
-    fontFamily: 'Gotham Rounded Bold',
-    
-},
-container: {
-  padding: 5,
-  borderWidth: 2,
-  borderRadius: 30,
-  borderColor: '#eb5a6d',
-  width: width * 0.9,
-  height: 48,
-  justifyContent: 'center',
-  alignItems: 'center',
-  flexDirection: 'row'
-},    
-leftIcon: {
-  position: 'absolute',
-  left: 10
-},
-dateText: {
-  fontFamily: 'Gotham Rounded Medium',
-}
+  },
+  inputTitle: {
+      fontSize: 16,
+      fontFamily: 'Gotham Rounded Bold',
+      
+  },
+  container: {
+    padding: 5,
+    borderWidth: 2,
+    borderRadius: 30,
+    borderColor: '#eb5a6d',
+    width: width * 0.9,
+    height: 48,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row'
+  },    
+  leftIcon: {
+    position: 'absolute',
+    left: 10
+  },
+  dateText: {
+    fontFamily: 'Gotham Rounded Medium',
+  }
 
 })

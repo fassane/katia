@@ -19,7 +19,7 @@ export const Months = {
     7: 'Aout',
     8: 'Septembre',
     9: 'Octobre',
-    10: 'Novemebre',
+    10: 'Novembre',
     11: 'Décembre'
 }
     

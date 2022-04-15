@@ -60,7 +60,8 @@ const LoginScreen = ({navigation}) => {
 
         <Input 
           inputTitle='Votre adresse email?'
-          leftIconName='user' 
+          iconSize={25}
+          leftIconName='user-o' 
           leftIconColor='#eb5a6d'
           rightIconName='check-circle'
           rightIconColor='green'
@@ -70,7 +71,8 @@ const LoginScreen = ({navigation}) => {
         <Text></Text>
         <Input 
           inputTitle='Votre mot de passe'
-          leftIconName='lock'
+          iconSize={28}
+          leftIconName='key'
           leftIconColor='#eb5a6d' 
           rightIconName='eye-off'
           rightIconColor='#606060'

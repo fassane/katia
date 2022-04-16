@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     position: 'relative',
     left: 0,
-    marginTop: 10
+    marginTop: 25
   },
   inputTitle: {
       fontSize: 16,

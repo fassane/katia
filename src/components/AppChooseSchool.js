@@ -32,7 +32,7 @@ const AppChooseSchool = ({inputTitle, leftIconName, leftIconColor, iconSize}) =>
     const [selectedSchool, setSelectedSchool] = useState(null)
 
     const renderItem = ({ item }) => {
-        const backgroundColor = item.id === selectedId ? "#F9429E" : "#f9c2ff";
+        const backgroundColor = item.id === selectedId ? "#F9429E" : "#FDBFB7";
         const color = item.id === selectedId ? 'white' : 'black';
         return (
           <Item
@@ -205,7 +205,9 @@ const styles = StyleSheet.create({
       item: {
         padding: 20,
         marginVertical: 8,
-        marginHorizontal: 16,
+        marginHorizontal: 0,
+        alignItems: 'center',
+        borderRadius: 15
       },
       title: {
         

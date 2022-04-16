@@ -11,6 +11,7 @@ import Feather from 'react-native-vector-icons/Feather'
 
 
 const Input = ({isInputTitlePresent,
+                amIWhantInputWithAllBorder,
                 inputTitle, 
                 iconSize,
                 leftIconName, 
@@ -34,7 +35,7 @@ const Input = ({isInputTitlePresent,
         : 
         null
     }
-    <View style={styles.container}>
+    <View style={ amIWhantInputWithAllBorder ? styles.containerWhitAllBorder : styles.container }>
         
         <FontAwesome 
             name={leftIconName}
@@ -83,14 +84,25 @@ const styles = StyleSheet.create({
     },
     container: {
         padding: 5,
-        borderWidth: 2,
-        borderRadius: 30,
+        borderBottomWidth: 2,
+        borderRadius: 5,
         borderColor: '#eb5a6d',
         width: width * 0.9,
         height: 48,
         justifyContent: 'center',
         alignItems: 'center',
         
+    },
+    containerWhitAllBorder: {
+        padding: 5,
+        borderWidth: 2,
+
+        borderRadius: 30,
+        borderColor: '#eb5a6d',
+        width: width * 0.9,
+        height: 48,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     textInput: {
         padding: 10,

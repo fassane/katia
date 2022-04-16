@@ -15,6 +15,7 @@ import AppDatePicker from '../../components/AppDatePicker'
 import AppChooseGenre from '../../components/AppChooseGenre'
 import AppChooseOrientationSex from '../../components/AppChooseOrientationSex'
 import AppChooseWhoIWantToSee from '../../components/AppChooseWhoIWantToSee'
+import AppChooseSchool from '../../components/AppChooseSchool'
 
 
 
@@ -96,16 +97,12 @@ const RegisterScreen = ({navigation}) => {
         <AppChooseWhoIWantToSee  
           inputTitle='Vous voulez voir?'
         />
-        <Input 
-          isInputTitlePresent={true}
+        <AppChooseSchool  
           inputTitle='Où avez-vous frequentez?'
           iconSize={24}
-          leftIconName='bus'
-          leftIconColor='#eb5a6d' 
-          rightIconName='eye-off'
-          rightIconColor='#606060'
-          placeholder='Entrer votre mot de passe'
-          keyboardType='numeric'
+          leftIconName='key'
+          leftIconColor='#eb5a6d'
+
         />
         <Input 
           isInputTitlePresent={true}
@@ -113,7 +110,7 @@ const RegisterScreen = ({navigation}) => {
           iconSize={24}
           leftIconName='building' 
           leftIconColor='#eb5a6d'
-          placeholder='Entrer votre email'
+          placeholder='Entrer votre ville'
           keyboardType='email-address'
           />
         <Input 
@@ -122,7 +119,7 @@ const RegisterScreen = ({navigation}) => {
           iconSize={24}
           leftIconName='building' 
           leftIconColor='#eb5a6d'
-          placeholder='Entrer votre email'
+          placeholder='Entrer votre pays'
           keyboardType='email-address'
           />
         <ImagesContainer  

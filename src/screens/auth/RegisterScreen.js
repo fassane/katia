@@ -79,8 +79,8 @@ const RegisterScreen = ({navigation}) => {
         <Input 
           isInputTitlePresent={true}
           inputTitle="Choisir un mot de passe"
-          iconSize={28}
-          leftIconName='lock'
+          iconSize={24}
+          leftIconName='key'
           leftIconColor='#eb5a6d' 
           rightIconName='eye-off'
           rightIconColor='#606060'

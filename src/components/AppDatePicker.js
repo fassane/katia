@@ -22,7 +22,7 @@ const AppDatePicker = ({inputTitle, iconSize, leftIconName, leftIconColor }) => 
   const day = date.getDay()
   console.log('annee: ', year)
 
-  console.log(Months[day])
+  //console.log(Months[day])
 
 
   return (

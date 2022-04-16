@@ -1,4 +1,4 @@
-export const Schools = [
+export const SCHOOLS = [
     {
         id: 1,
         name: 'ESMT'

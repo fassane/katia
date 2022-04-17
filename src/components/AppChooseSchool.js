@@ -177,15 +177,7 @@ const styles = StyleSheet.create({
       shadowRadius: 8,
       elevation: 10
     },
-    button: {
-      borderRadius: 20,
-      padding: 10,
-      elevation: 5
-    },
     
-    buttonClose: {
-      backgroundColor: "#2196F3",
-    },
     textStyle: {
       color: "white",
       fontWeight: "bold",
@@ -217,9 +209,10 @@ const styles = StyleSheet.create({
       
 
       buttonChoose: {
-          backgroundColor: '#F9429E',
+          backgroundColor: '#eb5a6d',
           borderRadius: 30,
-          padding: 10
+          padding: 12,
+          elevation: 10
       },
       textChoose: {
           color: 'white',

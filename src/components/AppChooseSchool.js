@@ -32,7 +32,7 @@ const AppChooseSchool = ({inputTitle, leftIconName, leftIconColor, iconSize}) =>
     const [selectedSchool, setSelectedSchool] = useState(null)
 
     const renderItem = ({ item }) => {
-        const backgroundColor = item.id === selectedId ? "#F9429E" : "#FDBFB7";
+        const backgroundColor = item.id === selectedId ? "#eb5a6d" : "#FDBFB7";
         const color = item.id === selectedId ? 'white' : 'black';
         return (
           <Item

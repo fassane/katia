@@ -57,7 +57,7 @@ const RegisterScreen = ({navigation}) => {
           leftIconColor='#eb5a6d'
           rightIconName='check-circle'
           rightIconColor='green'
-          placeholder='Entrer votre prenom'
+          placeholder='Saisi ton prenom'
           keyboardType='email-address'
           />
         <AppDatePicker  
@@ -74,7 +74,7 @@ const RegisterScreen = ({navigation}) => {
           leftIconColor='#eb5a6d' 
           rightIconName='check-circle'
           rightIconColor='green'
-          placeholder='Entrer votre adresse email'
+          placeholder='Saisi ton adresse e-mail'
           keyboardType='numeric'
         />
         <Input 
@@ -85,7 +85,7 @@ const RegisterScreen = ({navigation}) => {
           leftIconColor='#eb5a6d' 
           rightIconName='eye-off'
           rightIconColor='#606060'
-          placeholder='Entrer votre mot de passe'
+          placeholder='Saisi ton mot de passe'
           keyboardType='numeric'
         />
         <AppChooseGenre
@@ -110,7 +110,7 @@ const RegisterScreen = ({navigation}) => {
           iconSize={24}
           leftIconName='building' 
           leftIconColor='#eb5a6d'
-          placeholder='Entrer votre ville'
+          placeholder='Saisi le nom de ta ville'
           keyboardType='email-address'
           />
         <Input 
@@ -119,7 +119,7 @@ const RegisterScreen = ({navigation}) => {
           iconSize={24}
           leftIconName='building' 
           leftIconColor='#eb5a6d'
-          placeholder='Entrer votre pays'
+          placeholder='Saisi le nom de ton pays'
           keyboardType='email-address'
           />
         <ImagesContainer  

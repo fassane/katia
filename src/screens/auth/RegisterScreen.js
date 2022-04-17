@@ -172,7 +172,8 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     backgroundColor: '#eb5a6d',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    elevation: 15
   },
   textDeValidation: {
     color: '#ffffff',

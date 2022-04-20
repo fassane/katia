@@ -134,13 +134,13 @@ const styles = StyleSheet.create({
     oneImageContainer: {
         borderRadius: 20,
         width: width * 0.3,
-        height: height * 0.21,
+        height: height * 0.25,
         marginTop: 10,
         
     },
     image: {
         width: width * 0.285,
-        height: height * 0.21,
+        height: height * 0.25,
         borderWidth: 2,
         borderColor: '#455A64',
         borderRadius: 20,

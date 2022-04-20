@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
         marginTop: 15,
         justifyContent: 'center',
         alignItems: 'center',
-        elevation: 15
+        elevation: 5
     },
     imageConnexionMethode: {
         position: 'absolute',

@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#eb5a6d',
         justifyContent: 'center',
         alignItems: 'center',
-        elevation: 15
+        elevation: 5
       },
       textDeValidation: {
         color: '#ffffff',

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { 
     View, 
     Text,
@@ -14,23 +14,51 @@ import ImagePicker from 'react-native-image-crop-picker';
 
 const ImagesContainer = ({inputTitle }) => {
 
+    const [image, setImage] = useState('../assets/person.png')
 
-    const PickImageFromGalery = () => {
+    console.log(image)
 
-            ImagePicker.openPicker({
-                width: 300,
-                height: 400,
-                cropping: true
-              }).then(image => {
-                console.log(image);
-              });   
-        
+
+    const takePhotoFromCamera = () => {
+        //console.log("prendre une photo")
+        ImagePicker.openCamera({
+            width: 300,
+            height: 400,
+            cropping: true,
+          }).then(image => {
+            console.log(image.path);
+            setImage(image.path)
+          });
     }
+
+    const choosePhotoFromGallery = () => {
+        //console.log("choisir photo depuis galerie")
+        ImagePicker.openPicker({
+            width: 300,
+            height: 400,
+            cropping: true
+          }).then(image => {
+            console.log(image);
+          });
+    }
+
+    {/*
+    renderInner = () => {
+        <View style={styles.panel}>
+
+        </View>
+    }
+    */}
     
 
     const AddImageIcon = () => {
         return (
-            <TouchableOpacity style={styles.addImageIcon} onPress={() => <PickImageFromGalery />} >
+            <TouchableOpacity 
+                style={styles.addImageIcon} 
+                onPress={() => (
+                    takePhotoFromCamera()
+                    //setImage()
+                ) } >
                 <FontAwesome  
                     name='plus-circle'
                     size={30}
@@ -55,13 +83,15 @@ const ImagesContainer = ({inputTitle }) => {
     const OneImageContainer = ({isImageAlreadyChoose}) => {
         return (
             <TouchableOpacity style={styles.oneImageContainer}>
-                <Image source={require('../assets/person.png')} style={styles.image} />
                 {
-                    isImageAlreadyChoose ? 
-                    (<RemoveImageIcon />) 
+                    image == '../assets/person.png' ? 
+                    (<Image source={require('../assets/person.png')} style={styles.image} />) 
                     : 
-                    (<AddImageIcon />)
+                    (<Image source={{ uri: image }} style={styles.image} />)
                 }
+                
+                    <AddImageIcon />
+                
             </TouchableOpacity>
         )
     }
@@ -144,7 +174,12 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: '#455A64',
         borderRadius: 20,
-
         
+    },
+
+    panel: {
+        width: width,
+        height: height * 0.4
+
     }
 })

@@ -16,9 +16,9 @@ const AuthNav = () => (
     <AuthStack.Navigator
         screenOptions={{ headerShown: false }}
     >
-        <AuthStack.Screen name='splash1' component={SplashScreenOne} />
+        {/*<AuthStack.Screen name='splash1' component={SplashScreenOne} />
         <AuthStack.Screen name='splash2' component={SplashScreenTwo} />
-        <AuthStack.Screen name='splash3' component={SplashScreenThree} />
+        <AuthStack.Screen name='splash3' component={SplashScreenThree} />*/}
         <AuthStack.Screen name='prelogin' component={PreLoginScreen} />
         <AuthStack.Screen name='login' component={LoginScreen} />
         <AuthStack.Screen name='preregister' component={PreRegisterScreen} />

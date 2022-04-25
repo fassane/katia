@@ -37,6 +37,6 @@ export const SCHOOLS = [
     },
     {
         id: 10,
-        name: 'NAZA'
+        name: 'NASQAD'
     },
 ]

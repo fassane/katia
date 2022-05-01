@@ -26,7 +26,7 @@ const PreRegisterScreen = ({navigation}) => {
         
         <View style={styles.subContainer}>
             <Image source={require('../../assets/logo_kat_r.png')} style={styles.logo} />
-            <Text style={styles.textBienvenu}>Bienvenue sur Katia.</Text>
+            <Text style={styles.textBienvenu}>Bienvenue sur katia.</Text>
             <Text style={styles.regle}>Voici les règles : merci de les respecter pour une meilleure expérience.</Text>
         </View>
 

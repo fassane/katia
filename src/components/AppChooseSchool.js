@@ -199,10 +199,9 @@ const styles = StyleSheet.create({
         marginVertical: 8,
         marginHorizontal: 0,
         alignItems: 'center',
-        borderRadius: 15
+        borderRadius: 30
       },
       title: {
-        
         fontSize: 20,
         fontFamily: 'Gotham Rounded Bold'
       },

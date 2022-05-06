@@ -22,16 +22,35 @@ const GENREDATA = [
 
 
 
+
+
 const AppChooseGenre = ({inputTitle}) => {
 
-    const [selectedId, setSelectedId] = useState(null)
 
-    const OneChoiceComponent = ({choice, onPress, backgroundColor, textColor}) => {
-        //const backgroundColor = GENREDATA.id === selectedId ? "#eb5a6d" : "#FDBFB7";
-        //const color = GENREDATA.id === selectedId ? 'white' : 'black';
+    const [selectedId, setSelectedId] = useState(null);
+
+    const [selectedGenre, setSelectedGenre] = useState(null)
+
+
+
+    const OneChoiceComponent = ({ id, choice, onPress }) => {
         return (
             <TouchableOpacity onPress={onPress} style={styles.choiceContainer}>
+                {
+                    onPress ?
+                    (console.log('pressed'))
+                    :
+                    (console.log('not pressed'))
+                }
+                {
+
+                    id == 1 ? 
+                    (console.log('1')) 
+                    : 
+                    (console.log('other than id 1'))
+                }
                 <Text style={styles.choiceText}> {choice} </Text>
+                
             </TouchableOpacity>
         )
     }
@@ -42,11 +61,14 @@ const AppChooseGenre = ({inputTitle}) => {
     <>
         <View style={styles.inputTitleContainer}>
         <Text style={styles.inputTitle}> {inputTitle} </Text>
-        </View>    
+        </View>
         
-        <OneChoiceComponent choice='Un Homme' />
-        <OneChoiceComponent choice='Une Femme' />
+            
         
+        <OneChoiceComponent id={1} choice='Un Homme'  />
+        <OneChoiceComponent id={2} choice='Une Femme' />
+        
+
         
    
     </>
@@ -79,13 +101,18 @@ const styles = StyleSheet.create({
         padding: 10,
         borderColor: '#eb5a6d',
         borderRadius: 30,
-        backgroundColor: '#eb5a6d',
+        backgroundColor: '#efefef',
         marginTop: 5
     },
     choiceText: {
         fontSize: 16,
         fontFamily: 'Gotham Rounded Bold',
         color: 'white'
+    },
+    choiceTextWhite: {
+        fontSize: 16,
+        fontFamily: 'Gotham Rounded Bold',
+        color: '#eb5a6d'
     },
     inputTitleContainer: {
         left: -width * 0.15,
@@ -99,6 +126,9 @@ const styles = StyleSheet.create({
     inputTitle: {
         fontSize: 16,
         fontFamily: 'Gotham Rounded Bold',
-        
+        color: '#000'
     },
+    
+
+
 })

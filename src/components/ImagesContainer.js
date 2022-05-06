@@ -16,7 +16,7 @@ const ImagesContainer = ({inputTitle }) => {
 
     const [image, setImage] = useState('../assets/person.png')
 
-    console.log(image)
+    //console.log(image.path)
 
 
     const takePhotoFromCamera = () => {
@@ -26,7 +26,7 @@ const ImagesContainer = ({inputTitle }) => {
             height: 400,
             cropping: true,
           }).then(image => {
-            console.log(image.path);
+            //console.log(image.path);
             setImage(image.path)
           });
     }
@@ -38,17 +38,26 @@ const ImagesContainer = ({inputTitle }) => {
             height: 400,
             cropping: true
           }).then(image => {
-            console.log(image);
+            //console.log(image);
+            setImage(image.path)
           });
     }
 
-    {/*
-    renderInner = () => {
-        <View style={styles.panel}>
-
-        </View>
+    
+    const RenderInnerComponent = ({onPress, text}) => {
+        <TouchableOpacity onPress={onPress} style={styles.renderInnerComponent}>
+            <Text style={styles.textRenderInner}> {text} </Text>
+        </TouchableOpacity>
     }
-    */}
+
+    const renderInner = () => {
+        return(
+        <View style={styles.panel}>
+            <RenderInnerComponent text='Choisir la camera' />
+        </View>
+        )
+    }
+    
     
 
     const AddImageIcon = () => {
@@ -56,8 +65,9 @@ const ImagesContainer = ({inputTitle }) => {
             <TouchableOpacity 
                 style={styles.addImageIcon} 
                 onPress={() => (
-                    takePhotoFromCamera()
+                    choosePhotoFromGallery(),
                     //setImage()
+                    renderInner()
                 ) } >
                 <FontAwesome  
                     name='plus-circle'
@@ -67,7 +77,7 @@ const ImagesContainer = ({inputTitle }) => {
             </TouchableOpacity>
         )
     }
-
+    
     const RemoveImageIcon = () => {
         return (
             <TouchableOpacity style={styles.removeImageIcon}>
@@ -87,7 +97,7 @@ const ImagesContainer = ({inputTitle }) => {
                     image == '../assets/person.png' ? 
                     (<Image source={require('../assets/person.png')} style={styles.image} />) 
                     : 
-                    (<Image source={{ uri: image }} style={styles.image} />)
+                    (<Image source={{ uri: image.path }} style={styles.image} />)
                 }
                 
                     <AddImageIcon />
@@ -118,6 +128,8 @@ const ImagesContainer = ({inputTitle }) => {
 
         <ThreeImageContainer />
         <ThreeImageContainer />
+
+        
         
     </View>
     </>
@@ -145,7 +157,7 @@ const styles = StyleSheet.create({
     inputTitle: {
         fontSize: 16,
         fontFamily: 'Gotham Rounded Bold',
-        
+        color: '#000'
     },
     addImageIcon: {
         position: 'absolute',
@@ -179,7 +191,16 @@ const styles = StyleSheet.create({
 
     panel: {
         width: width,
-        height: height * 0.4
+        height: height * 0.4,
+        backgroundColor: '#ccc'
+    },
 
+    renderInnerComponent: {
+        borderWidth: 1,
+        padding: 10,
+        backgroundColor: '#eb5a6d'
+    },
+    textRenderInner: {
+        color: '#fff'
     }
 })

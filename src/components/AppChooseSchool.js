@@ -32,7 +32,7 @@ const AppChooseSchool = ({inputTitle, leftIconName, leftIconColor, iconSize}) =>
     const [selectedSchool, setSelectedSchool] = useState(null)
 
     const renderItem = ({ item }) => {
-        const backgroundColor = item.id === selectedId ? "#eb5a6d" : "#000";
+        const backgroundColor = item.id === selectedId ? "#eb5a6d" : "#303030";
         const color = item.id === selectedId ? 'white' : 'white';
         return (
           <Item
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
       inputTitle: {
           fontSize: 16,
           fontFamily: 'Gotham Rounded Bold',
-          color: '#000'
+          color: '#303030'
       },
     container: {
         padding: 5,
@@ -188,7 +188,8 @@ const styles = StyleSheet.create({
       marginBottom: 10,
       textAlign: "center",
       fontSize: 16,
-      fontFamily: 'Gotham Rounded Bold'
+      fontFamily: 'Gotham Rounded Bold',
+      color: '#303030'
     },
 
     containerTT: {

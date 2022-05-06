@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     inputTitle: {
         fontSize: 16,
         fontFamily: 'Gotham Rounded Bold',
-        color: '#000'
+        color: '#303030'
     },
     container: {
         padding: 5,

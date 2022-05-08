@@ -84,9 +84,9 @@ const styles = StyleSheet.create({
     },
     container: {
         padding: 5,
-        borderBottomWidth: 2,
+        borderBottomWidth: 1.5,
         borderRadius: 5,
-        borderColor: '#eb5a6d',
+        borderColor: '#303030',
         width: width * 0.9,
         height: 48,
         justifyContent: 'center',
@@ -96,9 +96,8 @@ const styles = StyleSheet.create({
     containerWhitAllBorder: {
         padding: 5,
         borderWidth: 2,
-
         borderRadius: 30,
-        borderColor: '#eb5a6d',
+        borderColor: '#303030',
         width: width * 0.9,
         height: 48,
         justifyContent: 'center',

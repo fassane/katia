@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
   },
   textRavieDeVoir: {
     fontSize: 28,
-    color: '#000',
+    color: '#303030',
     position: 'relative',
     fontFamily: 'Gotham Rounded Bold',
     marginBottom: 20

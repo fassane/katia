@@ -123,8 +123,8 @@ const styles = StyleSheet.create({
     imageConnexionMethode: {
         position: 'absolute',
         left: 12,
-        width: 25,
-        height: 25,
+        width: 24,
+        height: 24,
     },
     textConnexionMethode: {
         fontSize: 13,

@@ -22,7 +22,7 @@ const ChooseThings = ({ inputTitle }) => {
   return (
     <>
         <View style={styles.inputTitleContainer}>
-        <Text style={styles.inputTitle}> {inputTitle} </Text>
+            <Text style={styles.inputTitle}> {inputTitle} </Text>
         </View>    
         
         <OneChoiceComponent choice='Heterosexuelle' />

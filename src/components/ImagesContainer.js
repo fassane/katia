@@ -12,7 +12,7 @@ import ImagePicker from 'react-native-image-crop-picker';
 
 
 
-const ImagesContainer = ({inputTitle }) => {
+const ImagesContainer = ({ navigation, inputTitle }) => {
 
     const [image, setImage] = useState('../assets/person.png')
 
@@ -60,15 +60,11 @@ const ImagesContainer = ({inputTitle }) => {
     
     
 
-    const AddImageIcon = () => {
+    const AddImageIcon = ({redirection}) => {
         return (
             <TouchableOpacity 
                 style={styles.addImageIcon} 
-                onPress={() => (
-                    choosePhotoFromGallery(),
-                    //setImage()
-                    renderInner()
-                ) } >
+                onPress={() => navigation.navigate({redirection}) } >
                 <FontAwesome  
                     name='plus-circle'
                     size={30}
@@ -184,7 +180,7 @@ const styles = StyleSheet.create({
         width: width * 0.285,
         height: height * 0.25,
         borderWidth: 2,
-        borderColor: '#303030',
+        borderColor: '#848484',
         borderRadius: 20,
         
     },

@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderWidth: 2,
         padding: 10,
-        borderColor: '#303030s',
+        borderColor: '#848484',
         borderRadius: 30,
         backgroundColor: '#efefef',
         marginTop: 5
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     choiceText: {
         fontSize: 16,
         fontFamily: 'Gotham Rounded Bold',
-        color: '#303030'
+        color: '#848484'
     },
     inputTitleContainer: {
         left: -width * 0.15,

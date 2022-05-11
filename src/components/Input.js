@@ -19,9 +19,21 @@ const Input = ({isInputTitlePresent,
                 rightIconName, 
                 rightIconColor, 
                 placeholder, 
-                keyboardType }) => {
+                keyboardType,
+                value,
+                onChangeText,
+                secureTextEntry,
+                onEndEditing,
+                onPressIn,
+                onSubmitEditing,
+                placeholderTextColor,
+                selection,
+                selectionColor,
+                showSoftInputOnFocus,
+                textAlign,
+                maxLength }) => {
 
-  const [number, onChangeNumber] = useState(null)
+  
 
   return (
     <>
@@ -44,12 +56,22 @@ const Input = ({isInputTitlePresent,
             style={styles.leftIcon}
         />
         <TextInput
-            onChangeText={onChangeNumber}
-            value={number}
+            onChangeText={onChangeText}
+            value={value}
             placeholder={placeholder}
+            placeholderTextColor={placeholderTextColor}
             keyboardType={keyboardType}
             multiline={false}
             autoCapitalize='none'
+            secureTextEntry={secureTextEntry}
+            maxLength={maxLength}
+            onEndEditing={onEndEditing}
+            onPressIn={onPressIn}
+            onSubmitEditing={onSubmitEditing}
+            selection={selection}
+            selectionColor={selectionColor}
+            showSoftInputOnFocus={showSoftInputOnFocus}
+            textAlign={textAlign}
             style={styles.textInput}
         />
         <Feather 

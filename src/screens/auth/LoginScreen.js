@@ -80,6 +80,7 @@ const LoginScreen = ({navigation}) => {
           rightIconColor='#606060'
           placeholder='Entrer votre mot de passe'
           keyboardType='numeric'
+          secureTextEntry={true}
           />
 
         <PhraseRedirection text="Mot de passe oublié?" redirection='prelogin' style={styles.phraseDeRedirectionMotDePasseOublie} /> 
@@ -134,15 +135,15 @@ const styles = StyleSheet.create({
     width: width * 0.9,
     height: 50,
     borderWidth: 2,
-    borderColor: '#eb5a6d',
+    borderColor: '#bababa',
     borderRadius: 30,
-    backgroundColor: '#eb5a6d',
+    backgroundColor: '#bababa',
     justifyContent: 'center',
     alignItems: 'center',
     elevation: 5
   },
   textDeValidation: {
-    color: '#ffffff',
+    color: '#303030',
     fontSize: 25,
     fontFamily: 'Gotham Rounded Bold',
   },

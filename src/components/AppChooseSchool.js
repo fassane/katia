@@ -28,7 +28,7 @@ const AppChooseSchool = ({inputTitle, leftIconName, leftIconColor, iconSize}) =>
     const [modalVisible, setModalVisible] = useState(false);
     const [selectedId, setSelectedId] = useState(null);
     const [selectedSchool, setSelectedSchool] = useState(null)
-    
+
 
     const renderItem = ({ item }) => {
         const backgroundColor = item.id === selectedId ? "#eb5a6d" : "#303030";
@@ -76,7 +76,7 @@ const AppChooseSchool = ({inputTitle, leftIconName, leftIconColor, iconSize}) =>
                 transparent={true}
                 visible={modalVisible}
                 onRequestClose={() => {
-                Alert.alert("Modal has been closed.");
+                //Alert.alert("Modal has been closed.");
                 setModalVisible(!modalVisible);
                 }}
             >
@@ -89,7 +89,6 @@ const AppChooseSchool = ({inputTitle, leftIconName, leftIconColor, iconSize}) =>
                                 renderItem={renderItem}
                                 keyExtractor={(item) => item.id}
                                 extraData={selectedId}
-                                
                             />
                         </View>
                         
@@ -98,6 +97,12 @@ const AppChooseSchool = ({inputTitle, leftIconName, leftIconColor, iconSize}) =>
                             onPress={() => setModalVisible(!modalVisible) }
                         >
                             <Text style={styles.textChoose}>J'ai bien choisi</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={styles.buttonCancel}
+                            onPress={() => setModalVisible(!modalVisible)}
+                        >
+                            <Text style={styles.textCancel}>Annuler</Text>
                         </TouchableOpacity>
 
                 </View>
@@ -150,10 +155,10 @@ const styles = StyleSheet.create({
     },
 
     flatListSchool: {
-        width: width * 0.6,
-        height: height * 0.4,
+        width: width * 0.58,
+        height: height * 0.42,
         marginBottom: 20,
-        marginTop: 10
+        marginTop: 12,
     },
 
     centeredView: {
@@ -184,11 +189,13 @@ const styles = StyleSheet.create({
       textAlign: "center"
     },
     modalText: {
-      marginBottom: 10,
+      marginBottom: 6,
       textAlign: "center",
-      fontSize: 16,
+      fontSize: 16.5,
       fontFamily: 'Gotham Rounded Bold',
-      color: '#303030'
+      color: '#303030',
+      //position: 'absolute',
+      //top: 15
     },
 
     containerTT: {
@@ -197,7 +204,7 @@ const styles = StyleSheet.create({
       },
       item: {
         padding: 20,
-        marginVertical: 8,
+        marginVertical: 5,
         marginHorizontal: 0,
         alignItems: 'center',
         borderRadius: 30
@@ -206,17 +213,27 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontFamily: 'Gotham Rounded Bold'
       },
-      
-
       buttonChoose: {
           backgroundColor: '#eb5a6d',
           borderRadius: 30,
-          padding: 12,
-          elevation: 10
+          padding: 14,
+          elevation: 10,
+          marginBottom: 20
       },
       textChoose: {
           color: 'white',
+          fontSize: 16,
           fontFamily: 'Gotham Rounded Bold'
+      },
+      buttonCancel: {
+        padding: 12,
+        position: 'absolute',
+        bottom: 12,
+        marginTop: 5
+      },
+      textCancel: {
+        fontSize: 16,
+        fontFamily: 'Gotham Rounded Bold'
       }
 
   });

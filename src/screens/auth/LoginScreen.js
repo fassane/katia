@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { View, 
         Text,
         TouchableOpacity,
@@ -12,9 +12,50 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import AppLogoHeader from '../../components/AppLogoHeader'
 
 
+
 const LoginScreen = ({navigation}) => {
 
 
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const [data, setData] = useState({
+    emailValidation: true,
+    passwordValidation: true
+  });
+
+  /// validation of fields
+  const validationDeEmail = (text) => {
+    if(text.trim().length >= 8 ) {
+        setData({
+            ...data,
+            emailValidation: true  
+        });
+    }
+    else{
+        setData({
+            ...data,
+            emailValidation: false
+        });
+    }
+  }
+  const validationMotDePasse = (text) => {
+      if(text.trim().length >= 6) {
+          setData({
+              ...data,
+              passwordValidation: true
+          });
+      }
+      else{
+          setData({
+              ...data,
+              passwordValidation: false
+          });
+      }
+  }
+
+
+  /******  validation button component ******/
   const ValidationButton = ({text, redirection}) => {
     return (
       <TouchableOpacity style={styles.buttonValidation} onPress={() => navigation.navigate(redirection)} >
@@ -25,6 +66,7 @@ const LoginScreen = ({navigation}) => {
     )
   }
 
+  /******  redirection phrase component ******/
   const PhraseRedirection = ({text, redirection, style}) => {
     return (
       <TouchableOpacity style={style}  onPress={() => navigation.navigate(redirection)} >
@@ -34,6 +76,8 @@ const LoginScreen = ({navigation}) => {
       </TouchableOpacity>
     )
   }
+
+
 
   return (
     <View style={styles.container}>
@@ -67,6 +111,10 @@ const LoginScreen = ({navigation}) => {
           rightIconName='check-circle'
           rightIconColor='green'
           placeholder='Entrer votre email'
+          multiline={false}
+          value={email}
+          onChangeText={text => setEmail(text)}
+          onEndEditing={(e) => validationDeEmail(e.nativeEvent.text)}
           keyboardType='email-address'
           />
         <Text></Text>
@@ -79,8 +127,12 @@ const LoginScreen = ({navigation}) => {
           rightIconName='eye-off'
           rightIconColor='#606060'
           placeholder='Entrer votre mot de passe'
+          multiline={false}
+          secureTextEntry
+          value={password}
+          onChangeText={text => setPassword(text)}
+          onEndEditing={(e) => validationMotDePasse(e.nativeEvent.text)}
           keyboardType='numeric'
-          secureTextEntry={true}
           />
 
         <PhraseRedirection text="Mot de passe oublié?" redirection='prelogin' style={styles.phraseDeRedirectionMotDePasseOublie} /> 
@@ -137,13 +189,13 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#bababa',
     borderRadius: 30,
-    backgroundColor: '#bababa',
+    backgroundColor: '#efefef',
     justifyContent: 'center',
     alignItems: 'center',
     elevation: 5
   },
   textDeValidation: {
-    color: '#303030',
+    color: '#848484',
     fontSize: 25,
     fontFamily: 'Gotham Rounded Bold',
   },

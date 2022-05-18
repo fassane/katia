@@ -26,10 +26,9 @@ const AppChooseSchool = ({inputTitle, leftIconName, leftIconColor, iconSize}) =>
 
 
     const [modalVisible, setModalVisible] = useState(false);
-
     const [selectedId, setSelectedId] = useState(null);
-
     const [selectedSchool, setSelectedSchool] = useState(null)
+    
 
     const renderItem = ({ item }) => {
         const backgroundColor = item.id === selectedId ? "#eb5a6d" : "#303030";

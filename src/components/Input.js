@@ -4,7 +4,8 @@ import {
     Text, 
     TextInput,
     StyleSheet,
-    Dimensions } from 'react-native'
+    Dimensions,
+    ToastAndroid } from 'react-native'
 
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import Feather from 'react-native-vector-icons/Feather'
@@ -20,6 +21,7 @@ const Input = ({isInputTitlePresent,
                 rightIconColor, 
                 placeholder, 
                 keyboardType,
+                multiline,
                 value,
                 onChangeText,
                 secureTextEntry,
@@ -31,9 +33,20 @@ const Input = ({isInputTitlePresent,
                 selectionColor,
                 showSoftInputOnFocus,
                 textAlign,
+                errorMessage,
                 maxLength }) => {
 
   
+  const ToastWithErrorMessage = () => {
+    ToastAndroid.showWithGravityAndOffset(
+        "C'est juste un test",
+        ToastAndroid.LONG,
+        ToastAndroid.BOTTOM,
+        25,
+        50
+    );
+   };
+                    
 
   return (
     <>
@@ -61,7 +74,7 @@ const Input = ({isInputTitlePresent,
             placeholder={placeholder}
             placeholderTextColor={placeholderTextColor}
             keyboardType={keyboardType}
-            multiline={false}
+            multiline={multiline}
             autoCapitalize='none'
             secureTextEntry={secureTextEntry}
             maxLength={maxLength}
@@ -72,6 +85,7 @@ const Input = ({isInputTitlePresent,
             selectionColor={selectionColor}
             showSoftInputOnFocus={showSoftInputOnFocus}
             textAlign={textAlign}
+            errorMessage={errorMessage}
             style={styles.textInput}
         />
         <Feather 

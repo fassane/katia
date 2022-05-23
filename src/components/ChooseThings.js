@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { 
     View, 
     Text,
@@ -8,27 +8,48 @@ import {
 
 
 
+const Item = ({ item, onPress, backgroundColor, textColor }) => (
+    <TouchableOpacity onPress={onPress} style={[styles.item, backgroundColor]}>
+        <Text style={[styles.title, textColor]}>{item.name}</Text>
+    </TouchableOpacity>
+);
+
+
+
 const ChooseThings = ({ inputTitle }) => {
 
 
-    const OneChoiceComponent = ({choice}) => {
+    const [selectedId, setSelectedId] = useState(null);
+    const [selectedThing, setSelectedThing] = useState(null)
+
+
+    const OneChoiceComponent = ({ item }) => {
+        const backgroundColor = item.id === selectedId ? "#eb5a6d" : "#efefef";
+        const color = item.id === selectedId ? 'white' : '#848484';
         return (
-        <TouchableOpacity style={styles.choiceContainer}>
-            <Text style={styles.choiceText}> {choice} </Text>
-        </TouchableOpacity>
+            <Item
+                item={item}
+                onPress={() => (
+                    setSelectedId(1),
+                    setSelectedThing('name')
+                )}
+                backgroundColor={{ backgroundColor }}
+                textColor={{ color }}
+            
+            />
         )
     }
 
   return (
     <>
         <View style={styles.inputTitleContainer}>
-            <Text style={styles.inputTitle}> {inputTitle} </Text>
+            <Text style={styles.inputTitle}> {inputTitle} </Text> 
         </View>    
-        
+        {/*
         <OneChoiceComponent choice='Heterosexuelle' />
         <OneChoiceComponent choice='Bisexuelle' />
         <OneChoiceComponent choice='Monosexuelle' />
-   
+        */}
     </>
   )
 

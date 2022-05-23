@@ -12,14 +12,15 @@ import Input from '../../components/Input'
 import ImagesContainer from '../../components/ImagesContainer'
 import PassionsChoose from '../../components/PassionsChoose'
 import AppDatePicker from '../../components/AppDatePicker'
-import AppChooseGenre from '../../components/AppChooseGenre'
-import AppChooseOrientationSex from '../../components/AppChooseOrientationSex'
-import AppChooseWhoIWantToSee from '../../components/AppChooseWhoIWantToSee'
 import AppChooseSchool from '../../components/AppChooseSchool'
+import ChooseThings from '../../components/ChooseThings'
+
+
 
 
 
 const RegisterScreen = ({navigation}) => {
+  
 
   const ValidationButton = ({text, redirection}) => {
     return (
@@ -58,6 +59,7 @@ const RegisterScreen = ({navigation}) => {
           rightIconName='check-circle'
           rightIconColor='green'
           placeholder='Saisi ton prenom'
+          multiline={false}
           keyboardType='email-address'
           />
         <AppDatePicker  
@@ -75,6 +77,7 @@ const RegisterScreen = ({navigation}) => {
           rightIconName='check-circle'
           rightIconColor='green'
           placeholder='Saisi ton adresse e-mail'
+          multiline={false}
           keyboardType='numeric'
         />
         <Input 
@@ -86,21 +89,22 @@ const RegisterScreen = ({navigation}) => {
           rightIconName='eye-off'
           rightIconColor='#606060'
           placeholder='Saisi ton mot de passe'
+          multiline={false}
           keyboardType='numeric'
         />
-        <AppChooseGenre
+        <ChooseThings  
           inputTitle='Vous êtes?'
         />
-        <AppChooseOrientationSex  
+        <ChooseThings  
           inputTitle='Votre orirentation sexuelle?'
         />
-        <AppChooseWhoIWantToSee  
+        <ChooseThings  
           inputTitle='Vous voulez voir?'
         />
         <AppChooseSchool  
           inputTitle='Où avez-vous frequentez?'
           iconSize={24}
-          leftIconName='key'
+          //leftIconName=''
           leftIconColor='#eb5a6d'
 
         />
@@ -111,6 +115,7 @@ const RegisterScreen = ({navigation}) => {
           leftIconName='building' 
           leftIconColor='#eb5a6d'
           placeholder='Saisi le nom de ta ville'
+          multiline={false}
           keyboardType='email-address'
           />
         <Input 
@@ -120,6 +125,7 @@ const RegisterScreen = ({navigation}) => {
           leftIconName='building' 
           leftIconColor='#eb5a6d'
           placeholder='Saisi le nom de ton pays'
+          multiline={false}
           keyboardType='email-address'
           />
         <ImagesContainer  

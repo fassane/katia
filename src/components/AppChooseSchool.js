@@ -100,7 +100,11 @@ const AppChooseSchool = ({inputTitle, leftIconName, leftIconColor, iconSize}) =>
                         </TouchableOpacity>
                         <TouchableOpacity
                             style={styles.buttonCancel}
-                            onPress={() => setModalVisible(!modalVisible)}
+                            onPress={() => (
+                              setModalVisible(!modalVisible),
+                              setSelectedSchool("---- Appuie pour choisir ----")
+    
+                            )}
                         >
                             <Text style={styles.textCancel}>Annuler</Text>
                         </TouchableOpacity>

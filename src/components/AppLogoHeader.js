@@ -15,14 +15,14 @@ const AppLogoHeader = ({logoColorWhite}) => {
             logoColorWhite ? 
             (
                 <>
-                <Image source={require('../assets/logo_kat_w.png')} style={styles.logoImage} />
+                <Image source={require('../assets/logow.png')} style={styles.logoImage} />
                 <Text style={styles.logoTextWhite}>katia</Text>
                 </>
             ) 
             : 
             (
                 <>
-                <Image source={require('../assets/logo_kat_r.png')} style={styles.logoImage} />
+                <Image source={require('../assets/logor.png')} style={styles.logoImage} />
                 <Text style={styles.logoTextRose}>katia</Text>
                 </>
             )

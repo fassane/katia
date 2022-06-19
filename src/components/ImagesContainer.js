@@ -12,7 +12,7 @@ import ImagePicker from 'react-native-image-crop-picker';
 
 
 
-const ImagesContainer = ({ navigation, inputTitle }) => {
+const ImagesContainer = ({ navigation, inputTitle, isForProfileScreen }) => {
 
     const [image, setImage] = useState('../assets/person.png')
 
@@ -63,7 +63,7 @@ const ImagesContainer = ({ navigation, inputTitle }) => {
     const AddImageIcon = ({redirection}) => {
         return (
             <TouchableOpacity 
-                style={styles.addImageIcon} 
+                style={ isForProfileScreen ? styles.addImageIconProfileScreen : styles.addImageIcon} 
                 onPress={() => navigation.navigate({redirection}) } >
                 <FontAwesome  
                     name='plus-circle'
@@ -76,7 +76,9 @@ const ImagesContainer = ({ navigation, inputTitle }) => {
     
     const RemoveImageIcon = () => {
         return (
-            <TouchableOpacity style={styles.removeImageIcon}>
+            <TouchableOpacity 
+                style={ isForProfileScreen ? styles.removeImageIconProfileScreen : styles.removeImageIcon}
+                >
                 <FontAwesome  
                     name='close'
                     size={35}
@@ -88,12 +90,17 @@ const ImagesContainer = ({ navigation, inputTitle }) => {
 
     const OneImageContainer = ({isImageAlreadyChoose}) => {
         return (
-            <TouchableOpacity style={styles.oneImageContainer}>
+            <TouchableOpacity 
+                style={isForProfileScreen ? styles.oneImageContainerProfileScreen : styles.oneImageContainer}>
                 {
                     image == '../assets/person.png' ? 
-                    (<Image source={require('../assets/person.png')} style={styles.image} />) 
+                    (<Image 
+                        source={require('../assets/person.png')} 
+                        style={isForProfileScreen ? styles.imageProfileScreen : styles.image} />) 
                     : 
-                    (<Image source={{ uri: image.path }} style={styles.image} />)
+                    (<Image 
+                        source={{ uri: image.path }} 
+                        style={isForProfileScreen ? styles.imageProfileScreen : styles.image} />)
                 }
                 
                     <AddImageIcon />
@@ -160,6 +167,16 @@ const styles = StyleSheet.create({
         bottom: 5,
         right: 5
     },
+    addImageIconProfileScreen: {
+        position: 'absolute',
+        bottom: 2,
+        right: 2
+    },
+    removeImageIconProfileScreen: {
+        position: 'absolute',
+        bottom: 2,
+        right: 2
+    },
     removeImageIcon: {
         position: 'absolute',
         bottom: 5,
@@ -174,15 +191,28 @@ const styles = StyleSheet.create({
         width: width * 0.3,
         height: height * 0.25,
         marginTop: 10,
-        
+    },
+    oneImageContainerProfileScreen: {
+        borderRadius: 20,
+        width: width * 0.24,
+        height: height * 0.12,
+        marginTop: 7,
+        marginRight: 7
     },
     image: {
         width: width * 0.285,
-        height: height * 0.25,
+        height: height * 0.24,
         borderWidth: 2,
         borderColor: '#848484',
         borderRadius: 20,
         
+    },
+    imageProfileScreen: {
+        width: width * 0.24,
+        height: height * 0.12,
+        borderWidth: 2,
+        borderColor: '#848484',
+        borderRadius: 20,
     },
 
     panel: {
